@@ -9,12 +9,9 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-
- 
 function App() {
   const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
   const [alert, setAlert] = useState(null);
-
   const showAlert = (message, type)=>{
       setAlert({
         msg: message,
@@ -24,7 +21,6 @@ function App() {
           setAlert(null);
       }, 1500);
   }
-
   const toggleMode = ()=>{ 
     if(mode === 'light'){
       setMode('dark');

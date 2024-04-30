@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Alert(props) {
   const capitalize = (word) => {
     const lower = word.toLowerCase();
@@ -12,6 +11,5 @@ function Alert(props) {
     
   )
 }
-
 export default Alert
  

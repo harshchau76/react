@@ -1,3 +1,4 @@
+// navbar.js //
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
@@ -16,7 +17,7 @@ export default function Navbar(props) {
                             <Link className="nav-link" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">{props.aboutText}</Link>
+                            <Link className="nav-link" to="/about">About</Link>
                         </li>
                     </ul>
                     <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
@@ -35,6 +36,6 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-    title: 'Set title here',
+    title: 'TextUtils',
     aboutText: 'About'
 };
